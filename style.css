@@ -1,21 +1,69 @@
-/* Your CSS styles go here */
 table,td,th{
-	font-size: 12px;
-	border: 1px solid #dddddd;
+		font-size: 12px;
+		border: 1px solid #dddddd;
+		outline-width: auto;
+	}
+	table{
+		width: auto;
+	}
+	body{ 
+		color: black;
+		background-color:#eee;
+		padding: auto;
+	}
+@media (min-width:701px) 
+{
+	.bodypart{
+		border:8px;
+		color: red;
+		margin-left:100px;
+		padding-left: 30px;
+		padding-right: 50px;
+		margin-right:30px;
+		width: 700px;
+		background: #0BD3FF;
+	}
+
 }
-body{ 
-	color: black;
-	background-color:#eee;
-	padding: 100px;
+@media (min-width:501px) and (max-width:700px)
+{
+	.bodypart{
+		border:2px;
+		color: black;
+		margin-left:300px;
+		margin-right: 300px; 	
+		padding-left: 50px;
+		padding-right: 50px;
+		width:150px;
+		background: #eee;
+	}
 }
-.bodypart{
-	border:2px;
-	color: black;
-	margin-left:300px;
-	padding-left: 50px;
-	width: 700px;
-	background: white;
+@media (min-width:301px) and (max-width:500px)
+{
+	.bodypart{
+		border:2px;
+		color: black;
+		margin-left:300px;
+		margin-right: 300px; 	
+		padding-left: 50px;
+		padding-right: 50px;
+		width:150px;
+		background: lightblue;
+	}
+}	
+@media (min-width:100px) and (max-width:300px)
+{
+	.bodypart{
+		border:2px;
+		color: black;
+		margin-left:300px;
+		margin-right: 300px; 	
+		padding-left: 50px;
+		padding-right: 50px;
+		width:150px;
+		background: white;
+	}
 }
-h3,h2{
-	text-align: center;
-}
+	h3,h2{
+		text-align: center;
+	}
